@@ -1,4 +1,4 @@
-class people::jbarnette {
+class people::netpro2k {
   include zsh
   include phantomjs
 
