@@ -31,8 +31,7 @@ class people::netpro2k {
       "ios-sim",
       "tig",
       "wget",
-      "z",
-      "zsh"
+      "z"
     ]:
   }
 
