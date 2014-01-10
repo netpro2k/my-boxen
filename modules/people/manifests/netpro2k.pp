@@ -20,7 +20,7 @@ class people::netpro2k {
   nodejs::module { 'cordova': node_version => 'v0.10' }
   nodejs::module { 'grunt-cli': node_version => 'v0.10' }
   nodejs::module { 'heroku': node_version => 'v0.10' }
-  nodejs::module { 'js2cofee': node_version => 'v0.10' }
+  nodejs::module { 'js2coffee': node_version => 'v0.10' }
   nodejs::module { 'karma': node_version => 'v0.10' }
 
   # Homebrew packages
