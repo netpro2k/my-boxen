@@ -220,14 +220,14 @@ class people::netpro2k {
     value  => true,
     user   => $::boxen_user;
   }
-  boxen::osx_defaults { 'Auto open window for new disks':
+  boxen::osx_defaults { 'Auto open window for new disks 2':
     ensure => present,
     domain => 'com.apple.frameworks.diskimages',
     key    => 'auto-open-rw-root',
     value  => true,
     user   => $::boxen_user;
   }
-  boxen::osx_defaults { 'Auto open window for new disks':
+  boxen::osx_defaults { 'Auto open window for new disks 3':
     ensure => present,
     domain => 'com.apple.finder',
     key    => 'OpenWindowForNewRemovableDisk',
