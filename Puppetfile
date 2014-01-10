@@ -68,4 +68,4 @@ github "firefox",    "1.1.7"
 github "sublime_text_3",    "1.0.2", :repo => "jozefizso/puppet-sublime_text_3"
 github "osx",    "2.2.2"
 
-githubsource "brewcask", :repo => "phinze/puppet-brewcask"
+githubsource "brewcask", :repo => "jalessio/puppet-brewcask"
