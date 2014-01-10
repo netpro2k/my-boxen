@@ -3,7 +3,7 @@ class people::netpro2k {
   include phantomjs
 
   include chrome
-  include chrome:canary
+  include chrome::canary
   include firefox
 
   include sublime_text_3
