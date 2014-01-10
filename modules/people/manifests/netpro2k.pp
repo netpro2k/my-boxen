@@ -69,7 +69,7 @@ class people::netpro2k {
   $prefDir = "${home}/Library/Preferences"
 
   repository { $dotfiles_dir:
-    source => "${::github_user}/dotfiles"
+    source => "netpro2k/dotfiles"
   }
   repository { $ohMyZsh:
     source => 'robbyrussell/oh-my-zsh',
