@@ -79,6 +79,11 @@ class people::netpro2k {
     target  => "${dotfiles_dir}/netpro2k.zsh-theme",
     require => [Repository[$dotfiles_dir], Repository[$ohMyZsh]]
   }
+  file { "${home}/.oh-my-zsh/custom":
+    ensure  => link,
+    target  => "${dotfiles_dir}/oh-my-zsh-custom",
+    require => [Repository[$dotfiles_dir], Repository[$ohMyZsh]]
+  }
 
   file { "${home}/.zshrc":
     ensure  => link,
