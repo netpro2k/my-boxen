@@ -56,7 +56,6 @@ class people::netpro2k {
       "slate",
       "steam",
       "the-unarchiver",
-      "unity3d",
       "vlc",
       "iterm2"
     ]: provider => 'brewcask' 
