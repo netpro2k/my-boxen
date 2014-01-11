@@ -81,6 +81,7 @@ class people::netpro2k {
   }
   file { "${home}/.oh-my-zsh/custom":
     ensure  => link,
+    force   => true,
     target  => "${dotfiles_dir}/oh-my-zsh-custom",
     require => [Repository[$dotfiles_dir], Repository[$ohMyZsh]]
   }
