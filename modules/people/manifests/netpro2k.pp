@@ -10,10 +10,10 @@ class people::netpro2k {
   include sublime_text_3::package_control
 
   # Set global node version
-  class { 'nodejs::global': version => 'v0.10.0' }
+  # class { 'nodejs::global': version => 'v0.10.0' }
 
   # Install Global NPM Modules
-  nodejs::module { 'bower': node_version => 'v0.10' }
+  nodejs::module { 'bower': node_version => 'v0.10.0' }
   nodejs::module { 'browserify': node_version => 'v0.10' }
   nodejs::module { 'brunch': node_version => 'v0.10' }
   nodejs::module { 'coffee-script': node_version => 'v0.10' }
