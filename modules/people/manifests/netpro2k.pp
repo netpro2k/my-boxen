@@ -50,7 +50,7 @@ class people::netpro2k {
       "mplayerx",
       "mumble",
       "google-music-manager",
-      "omnidisksweeeper",
+      "omnidisksweeper",
       "plex-home-theater",
       "skype",
       "slate",
