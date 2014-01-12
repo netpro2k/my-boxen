@@ -1,12 +1,29 @@
+GIT
+  remote: git://github.com/jalessio/puppet-brewcask.git
+  ref: master
+  sha: 458df853f1c6d650f4960cb0fcc5d6a36e3e0bbf
+  specs:
+    brewcask (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.3.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.1.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.1.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -54,6 +71,11 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.2.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (2.0.2)
@@ -84,6 +106,16 @@ GITHUBTARBALL
     xquartz (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
+
+GITHUBTARBALL
+  remote: jozefizso/puppet-sublime_text_3
+  specs:
+    sublime_text_3 (1.0.2)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.0)
@@ -95,7 +127,10 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.3.4)
+  brewcask (>= 0)
+  chrome (= 1.1.2)
   dnsmasq (= 1.0.0)
+  firefox (= 1.1.7)
   foreman (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
@@ -106,11 +141,14 @@ DEPENDENCIES
   nginx (= 1.4.2)
   nodejs (= 3.3.0)
   openssl (= 1.0.0)
+  osx (= 2.2.2)
   phantomjs (= 2.0.2)
   pkgconfig (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.7.2)
   stdlib (= 4.1.0)
+  sublime_text_3 (= 1.0.2)
   sudo (= 1.0.0)
   xquartz (= 1.1.0)
+  zsh (= 1.0.0)
 
