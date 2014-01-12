@@ -69,6 +69,7 @@ class people::netpro2k {
   $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
   $ohMyZsh = "robbyrussell/oh-my-zsh"
   $prefDir = "${home}/Library/Preferences"
+  $appSupportDir = "${home}/Library/Application Support"
 
   repository { $dotfiles_dir:
     source => "netpro2k/dotfiles"
@@ -87,6 +88,13 @@ class people::netpro2k {
     force   => true,
     target  => "${dotfiles_dir}/oh-my-zsh-custom",
     require => [Repository[$dotfiles_dir], Repository[$ohMyZsh]]
+  }
+
+  file { "${appSupportDir}/Sublime Text 3":
+    ensure  => link,
+    force   => true,
+    target  => "${dotfiles_dir}/Application Support/Sublime Text 3",
+    require => Repository[$dotfiles_dir]
   }
 
   file { "${home}/.zshrc":
