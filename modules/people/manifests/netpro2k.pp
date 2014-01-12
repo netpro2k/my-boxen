@@ -22,6 +22,9 @@ class people::netpro2k {
   nodejs::module { 'heroku': node_version => 'v0.10' }
   nodejs::module { 'js2coffee': node_version => 'v0.10' }
   nodejs::module { 'karma': node_version => 'v0.10' }
+  nodejs::module { 'jshint': node_version => 'v0.10' }
+  nodejs::module { 'coffeelint': node_version => 'v0.10' }
+  nodejs::module { 'csslint': node_version => 'v0.10' }
 
   # Homebrew packages
   package {
