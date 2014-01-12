@@ -127,9 +127,9 @@ class people::netpro2k {
     target  => "${dotfiles_dir}/vimrc",
     require => Repository[$dotfiles_dir]
   }
-  file { "${prefDir}/com.alfredapp.Alfred.plist":
+  file { "${prefDir}/com.runningwithcrayons.Alfred-Preferences.plist":
     ensure  => link,
-    target  => "${dotfiles_dir}/Preferences/com.alfredapp.Alfred.plist",
+    target  => "${dotfiles_dir}/Preferences/com.runningwithcrayons.Alfred-Preferences.plist",
     require => Repository[$dotfiles_dir]
   }
   file { "${prefDir}/com.googlecode.iterm2.plist":
