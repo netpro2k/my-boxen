@@ -7,7 +7,6 @@ class people::netpro2k {
   include firefox
 
   include sublime_text_3
-  include sublime_text_3::package_control
 
   # Set global node version
   # class { 'nodejs::global': version => 'v0.10.0' }
@@ -90,7 +89,8 @@ class people::netpro2k {
     require => [Repository[$dotfiles_dir], Repository[$ohMyZsh]]
   }
 
-  file { "${appSupportDir}/Sublime Text 3":
+  # Odd syntax since it needs to override stuff from sublime_text_3 package above
+  File <| title == "${appSupportDir}/Sublime Text 3" |> {
     ensure  => link,
     force   => true,
     target  => "${dotfiles_dir}/Application Support/Sublime Text 3",
