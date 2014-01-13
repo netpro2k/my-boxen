@@ -13,17 +13,17 @@ class people::netpro2k {
 
   # Install Global NPM Modules
   nodejs::module { 'bower': node_version => 'v0.10.0' }
-  nodejs::module { 'browserify': node_version => 'v0.10' }
-  nodejs::module { 'brunch': node_version => 'v0.10' }
-  nodejs::module { 'coffee-script': node_version => 'v0.10' }
-  nodejs::module { 'cordova': node_version => 'v0.10' }
-  nodejs::module { 'grunt-cli': node_version => 'v0.10' }
-  nodejs::module { 'heroku': node_version => 'v0.10' }
-  nodejs::module { 'js2coffee': node_version => 'v0.10' }
-  nodejs::module { 'karma': node_version => 'v0.10' }
-  nodejs::module { 'jshint': node_version => 'v0.10' }
-  nodejs::module { 'coffeelint': node_version => 'v0.10' }
-  nodejs::module { 'csslint': node_version => 'v0.10' }
+  nodejs::module { 'browserify': node_version => 'v0.10.0' }
+  nodejs::module { 'brunch': node_version => 'v0.10.0' }
+  nodejs::module { 'coffee-script': node_version => 'v0.10.0' }
+  nodejs::module { 'cordova': node_version => 'v0.10.0' }
+  nodejs::module { 'grunt-cli': node_version => 'v0.10.0' }
+  nodejs::module { 'heroku': node_version => 'v0.10.0' }
+  nodejs::module { 'js2coffee': node_version => 'v0.10.0' }
+  nodejs::module { 'karma': node_version => 'v0.10.0' }
+  nodejs::module { 'jshint': node_version => 'v0.10.0' }
+  nodejs::module { 'coffeelint': node_version => 'v0.10.0' }
+  nodejs::module { 'csslint': node_version => 'v0.10.0' }
 
   # Homebrew packages
   package {
@@ -59,6 +59,7 @@ class people::netpro2k {
       "steam",
       "the-unarchiver",
       "vlc",
+      "versions",
       "iterm2"
     ]: provider => 'brewcask' 
   }
