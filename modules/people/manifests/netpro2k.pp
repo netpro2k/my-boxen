@@ -8,6 +8,8 @@ class people::netpro2k {
 
   include sublime_text_3
 
+  include python
+
   # Set global node version
   class { 'nodejs::global': version => 'v0.10' }
 

@@ -67,5 +67,6 @@ github "chrome",    "1.1.2"
 github "firefox",    "1.1.7"
 github "sublime_text_3",    "1.0.2", :repo => "jozefizso/puppet-sublime_text_3"
 github "osx",    "2.2.2"
+github "python", "1.3.0"
 
 githubsource "brewcask", :repo => "jalessio/puppet-brewcask"
