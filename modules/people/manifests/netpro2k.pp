@@ -9,25 +9,27 @@ class people::netpro2k {
   include sublime_text_3
 
   # Set global node version
-  # class { 'nodejs::global': version => 'v0.10.0' }
+  class { 'nodejs::global': version => 'v0.10' }
 
   # Install Global NPM Modules
-  nodejs::module { 'bower': node_version => 'v0.10.0' }
-  nodejs::module { 'browserify': node_version => 'v0.10.0' }
-  nodejs::module { 'brunch': node_version => 'v0.10.0' }
-  nodejs::module { 'coffee-script': node_version => 'v0.10.0' }
-  nodejs::module { 'cordova': node_version => 'v0.10.0' }
-  nodejs::module { 'grunt-cli': node_version => 'v0.10.0' }
-  nodejs::module { 'heroku': node_version => 'v0.10.0' }
-  nodejs::module { 'js2coffee': node_version => 'v0.10.0' }
-  nodejs::module { 'karma': node_version => 'v0.10.0' }
-  nodejs::module { 'jshint': node_version => 'v0.10.0' }
-  nodejs::module { 'coffeelint': node_version => 'v0.10.0' }
-  nodejs::module { 'csslint': node_version => 'v0.10.0' }
+  nodejs::module {[
+      'bower',
+      'browserify',
+      'brunch',
+      'coffee-script',
+      'cordova@3.1',
+      'grunt-cli',
+      'heroku',
+      'js2coffee',
+      'karma',
+      'jshint',
+      'coffeelint',
+      'csslint'
+    ]: node_version => 'v0.10'
+  }
 
   # Homebrew packages
-  package {
-    [
+  package {[
       "ant",
       "ffmpeg",
       "ios-sim",
@@ -39,8 +41,7 @@ class people::netpro2k {
 
   # Install brew-cask apps
   include brewcask
-  package { 
-    [
+  package {[
       "alfred",
       "android-file-transfer",
       "charles",
