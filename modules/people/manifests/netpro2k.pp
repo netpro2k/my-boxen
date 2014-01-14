@@ -45,7 +45,6 @@ class people::netpro2k {
       "alfred",
       "android-file-transfer",
       "charles",
-      "cloudapp",
       "crashplan",
       "cyberduck",
       "harvest",
